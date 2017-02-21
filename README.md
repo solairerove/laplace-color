@@ -20,4 +20,4 @@ OS name: "linux", version: "4.9.8-1-arch", arch: "amd64", family: "unix"
 
 ## Build
 
-`mvn clean install && java -jar target/laplace-1.0-SNAPSHOT.jar`
+`mvn clean install -T 4 && java -jar target/theshit-1.0-SNAPSHOT.jar`
