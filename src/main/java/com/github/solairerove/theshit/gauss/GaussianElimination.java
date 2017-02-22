@@ -48,10 +48,16 @@ public class GaussianElimination {
                 throw new RuntimeException("Matrix is singular or nearly singular");
             }
 
-            // pivot within A and b
+            /**
+            * It first exchanges rows to move the entry with the 
+            * largest absolute value to the pivot position
+            * Do for all rows below pivot
+            * Matrix will be in row-echelon form and may be solved by back-substitution
+            **/
             for (int i = p + 1; i < N; i++) {
                 double alpha = A[i][p] / A[p][p];
                 b[i] -= alpha * b[p];
+                // Do for all remaining elements in current row
                 for (int j = p; j < N; j++) {
                     A[i][j] -= alpha * A[p][j];
                 }
