@@ -30,6 +30,7 @@ public class GaussianElimination {
         for (int p = 0; p < N; p++) {
 
             // find pivot row and swap
+            // Search for maximum and swap
             int max = p;
             for (int i = p + 1; i < N; i++) {
                 if (Math.abs(A[i][p]) > Math.abs(A[max][p])) {
