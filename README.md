@@ -1,5 +1,4 @@
-# laplace-color
-Solve Laplace's equation
+# University 4th grade shit
 
 ## Environment
 
