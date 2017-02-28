@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const path = require('path');
 const http = require('http');
 const bodyParser = require('body-parser');
@@ -9,9 +10,8 @@ const app = express();
 
 // parser for post data
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-  extended: false
-}));
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(cors());
 
 // static path do dist
 app.use(express.static(path.join(__dirname, '../dist')));
@@ -31,4 +31,4 @@ app.set('port', port);
 // create http server
 const server = http.createServer(app);
 
-server.listen(port, () => console.log(`API runninh on localhost: ${port}`));
+server.listen(port, () => console.log(`API running on localhost: ${port}`));
