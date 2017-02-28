@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MatrixComponent } from './matrix/matrix.component';
 import {HttpService} from "./http.service";
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MatrixComponent
+    MatrixComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
