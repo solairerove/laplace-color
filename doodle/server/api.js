@@ -14,10 +14,11 @@ router.get('/objects1', (req, res) => {
 
   const matrix = {
     objects: [
-      {name: 'obj1', attributes: ['1', '0', '1', '1', '1']},
-      {name: 'obj2', attributes: ['0', '0', '1', '1', '1']}
+      {name: 'Guitar', attributes: ['1', '1', '1', '1']},
+      {name: 'Trumpet', attributes: ['0', '0', '0', '0']},
+      {name: 'Violin', attributes: ['1', '1', '1', '0']}
     ],
-    attributes: ['1', '2', '3', '4', '6']
+    attributes: ['String', 'Vulture', 'Deck', 'Bolt']
   };
 
   jsonFile.writeFile(FILE, JSON.stringify(matrix));

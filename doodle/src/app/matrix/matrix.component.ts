@@ -8,7 +8,6 @@ import {HttpService} from "../http.service";
 })
 export class MatrixComponent implements OnInit {
 
-  public matrix: any;
   public objects: any;
   public attributes: any;
 

@@ -1,11 +1,17 @@
-<p>
-  matrix works!
-</p>
+<table class="striped centered">
+  <thead>
+  <tr>
+    <th data-field="id">Name</th>
+    <th *ngFor="let attr of attributes">{{attr}}</th>
+  </tr>
+  </thead>
 
-<div *ngFor="let obj of objects" style="display: inline; margin-left: 10px;">
-  {{obj.name}}
-</div>
-
-<div *ngFor="let attr of attributes">
-  {{attr}}
-</div>
+  <tbody>
+  <tr *ngFor="let obj of objects">
+    <td>{{obj.name}}</td>
+    <td *ngFor="let attr of obj.attributes">
+      {{attr}}
+    </td>
+  </tr>
+  </tbody>
+</table>
