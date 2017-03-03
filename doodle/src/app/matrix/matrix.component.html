@@ -1,0 +1,19 @@
+<table class="striped centered">
+  <thead>
+  <tr>
+    <th data-field="id">Name</th>
+    <th *ngFor="let attr of attributes">{{attr}}</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let obj of objects">
+    <td>{{obj.name}}</td>
+    <td *ngFor="let attr of obj.attributes">
+      {{attr}}
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<app-form></app-form>
