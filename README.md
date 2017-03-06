@@ -1,5 +1,7 @@
 # University 4th grade shit (doodle dead)
 
+[cluster krivitski-no](https://github.com/solairerove/krivitski-no)
+
 ## Environment
 
 ```
